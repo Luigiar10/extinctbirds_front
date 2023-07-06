@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
+
+:root {
+    --color-background-main: #F6DBC9;
+    --color-main: #1A2238;
+    --color-secondary: #ffa200;
+    --font: 'Roboto Mono', monospace;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--color-background-main);
+    font-family: var(--font);
+}
+
+/* UTILITIES */
+
+p, a, h1, h2, h3, h4, h5, h6 {
+    color: var(--color-main);
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+}
+
+.container {
+	width: 95vw;
+	margin: 0 auto;
+}
+
+@media (min-width: 576px) {
+    .container {
+        width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1140px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container {
+        width: 1320px;
+    }
+}
+
+.nuxt-link-exact-active {
+    color: var(--color-secondary);
+}
+
+/* END UTILITIES */
